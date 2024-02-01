@@ -22,6 +22,25 @@ library(tidyverse)
 ### In this code chunk, start with the diamonds dataset (built in to
 ### ggplot2 package) and create a plot of price vs. carat (or some other
 ### variables of your choice)
+
+
+# Load ggplot2 package
+library(ggplot2)
+
+# Load diamonds dataset
+data(diamonds)
+
+# Create a scatter plot of price vs. carat
+diamond_plot <- ggplot(diamonds, aes(x = carat, y = price)) +
+  geom_point() +
+  labs(title = "Scatter Plot of Price vs. Carat",
+       x = "Carat",
+       y = "Price")
+
+diamond_plot
+
+
+
 ```
 
 ```{r partner 2}
